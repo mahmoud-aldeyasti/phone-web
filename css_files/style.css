@@ -1,0 +1,166 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: none;
+    outline: 0;
+    transition: all 0.3s linear;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+html{
+    font-size: 14px;
+}
+:root{
+    font-size: 14px;
+
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #856B18;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 0px 20px 0px;
+}
+
+header{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    margin-top: 0px;
+}
+
+header .logo{
+    cursor: pointer;
+}
+header .logo i{
+    font-size: 2.5rem;
+    color: #FDE7AC;
+}
+
+header .nav li{
+    display: inline-block;
+    margin: 4px 12px;
+}
+header .nav {
+    margin-right: 3%;
+}
+
+header .nav li a{
+    display: block;
+    font-size: 1.0rem;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+header .nav li a:hover{
+    
+    border-bottom: 2px solid;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+}
+.content .text{
+    color: white;
+    width: 40%;
+}
+
+.content .text h1{
+    font-size: 1.8rem;
+    margin: 20px 0px;
+    line-height: 1.5;
+}
+.content .text p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 20px 0px;
+
+}
+
+.content .text a{
+    color: #FDE7AC;
+    background-color: #E3BF5C;
+    margin: 10px 0px;
+    padding: 8px 15px;
+    border-radius: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.content .text a:hover{
+    transform: scale(1.2);
+}
+
+
+.content .image{
+    width: 35%;
+}
+
+.content .image img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img{
+    width: 40px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+
+
+@media(min-width:1000px){
+    html{
+        font-size: 18px;
+    }
+    :root{
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:300px){
+    html{
+        font-size: 9px;
+    }
+    :root{
+        font-size: 9px;
+    }
+
+    .content .text{
+        width: 50%;
+    }
+    .icons img{
+        width: 30px;
+        cursor: pointer;
+        margin: 10px 3px;
+    }
+    header .nav li{
+        margin: 0px 4px;
+    }
+
+}
